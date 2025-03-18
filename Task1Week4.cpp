@@ -9,10 +9,9 @@ int main(){
     }
     cout << "Nilai i terakhir : " << i << endl;
 
-    //Pencaacah turun
+    //Pencacah turun
     for (i = 5; i > 0; i--){
         cout << "Nilai 1 = "<< i <<"Lari Keliling Lapangan" << endl;
     }
     cout << 'Nilai i terakhir : ' << i << endl;
 }
- 
