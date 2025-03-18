@@ -43,7 +43,5 @@ int main (){
                 cout << "Pilihan anda salah" << endl;
                 break;
         }       
-    }while(pilihan != 3);
-
-    
+    }while(pilihan != 3); 
 }
