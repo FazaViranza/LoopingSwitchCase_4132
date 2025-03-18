@@ -1,17 +1,38 @@
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 
 int main(){
-    //Pencacah Naik
-    int i;
-    for (i = 0; i < 5; i++){
-        cout << "Nilai i = "<< i <<" Lari Keliling Lapangan" << endl; 
-    }
-    cout << "Nilai i terakhir : " << i << endl;
+    //Perulangan While
+    int x;
+    int perulanganWhile = 0;
+    int perulanganDo = 0;
 
-    //Pencacah turun
-    for (i = 5; i > 0; i--){
-        cout << "Nilai 1 = "<< i <<"Lari Keliling Lapangan" << endl;
-    }
-    cout << 'Nilai i terakhir : ' << i << endl;
+srand(time(0));
+x = rand() % 10;
+cout << "Perulangan While " << endl;
+cout << "Nilai X awal = " << x << endl;
+
+while(x < 7){
+    cout << "Nilai x = "<< x <<" Lari Keliling " << endl;
+    x = rand() % 10;
+    perulanganWhile++;
+}
+
+cout << "Nilai X Terakhir = " << x << endl;
+cout << "Nilai Perulangan = " << perulanganWhile << endl;
+
+//Perulangan Do While
+cout << endl;
+cout << "Perulangan Do While" << endl;
+do{
+    cout << "Nilai x = "<< x << " Lari Keliling " << endl;
+    x = rand() % 10;
+    perulanganDo++;
+}while(x < 7);
+cout << "Nilai X terakhir : " << x << endl;
+cout << "Jumlah Perulangan Do While : " << perulanganDo << endl;
+
+
 }
